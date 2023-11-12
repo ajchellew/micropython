@@ -38,7 +38,7 @@
 #define DEBUG_printf(...) // printf("btstack: " __VA_ARGS__)
 
 #ifndef MICROPY_PY_BLUETOOTH_DEFAULT_GAP_NAME
-#define MICROPY_PY_BLUETOOTH_DEFAULT_GAP_NAME "MPY BTSTACK"
+#define MICROPY_PY_BLUETOOTH_DEFAULT_GAP_NAME "BTNAME"
 #endif
 
 // How long to wait for a controller to init/deinit.
