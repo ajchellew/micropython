@@ -887,13 +887,13 @@ int mp_bluetooth_gatts_register_service_begin(bool append) {
         // Note this would be a memory leak if we enabled HAVE_MALLOC (there's no API to free the existing db).
         att_db_util_init();
 
-        att_db_util_add_service_uuid16(GAP_SERVICE_UUID);
-        uint16_t handle = att_db_util_add_characteristic_uuid16(GAP_DEVICE_NAME_UUID, ATT_PROPERTY_READ | ATT_PROPERTY_DYNAMIC, ATT_SECURITY_NONE, ATT_SECURITY_NONE, NULL, 0);
-        (void)handle;
-        assert(handle == BTSTACK_GAP_DEVICE_NAME_HANDLE);
+        //att_db_util_add_service_uuid16(GAP_SERVICE_UUID);
+        //uint16_t handle = att_db_util_add_characteristic_uuid16(GAP_DEVICE_NAME_UUID, ATT_PROPERTY_READ | ATT_PROPERTY_DYNAMIC, ATT_SECURITY_NONE, ATT_SECURITY_NONE, NULL, 0);
+        //(void)handle;
+        //assert(handle == BTSTACK_GAP_DEVICE_NAME_HANDLE);
 
-        att_db_util_add_service_uuid16(0x1801);
-        att_db_util_add_characteristic_uuid16(0x2a05, ATT_PROPERTY_READ, ATT_SECURITY_NONE, ATT_SECURITY_NONE, NULL, 0);
+        //att_db_util_add_service_uuid16(0x1801);
+        //att_db_util_add_characteristic_uuid16(0x2a05, ATT_PROPERTY_READ, ATT_SECURITY_NONE, ATT_SECURITY_NONE, NULL, 0);
     }
 
     return 0;
